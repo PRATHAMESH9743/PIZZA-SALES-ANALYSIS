@@ -239,7 +239,8 @@ ORDER BY Total_Orders ASC;
 ```
 ![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/c96c898d-bad6-41af-9f42-9610626298b6)
 
-
+## DATA VISUALIZATION - POWER BI
+### Connect POWER BI to SQL Database
 
 
 
