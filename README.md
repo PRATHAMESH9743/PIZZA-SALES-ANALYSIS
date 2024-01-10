@@ -6,13 +6,16 @@ Source Data:
 pizza sales.csv
 The source data contained Pizza sales 48621 records of 2015. This is included in the repository.
 
+## Database and Tools
+MySQL
+POWER BI
 
-##Data Cleaning & Analysis:
+###Data Cleaning & Analysis:
 This was done on SQL server 2023 involving
 
 Data loading & inspection
 Handling missing values
 Data cleaning and analysis
 
-##Data Visualization:
+###Data Visualization:
 Power BI Desktop
