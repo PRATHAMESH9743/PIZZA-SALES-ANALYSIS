@@ -183,6 +183,64 @@ ORDER BY Total_Quantity_Sold DESC;
 ```
 ![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/91371af4-620b-449a-97ab-460b328c5b2e)
 
+## G. Top 5 Pizzas by Revenue
+```SQL
+SELECT Top 5 pizza_name, SUM(total_price) AS Total_Revenue
+FROM pizza_sales
+GROUP BY pizza_name
+ORDER BY Total_Revenue DESC;
+```
+![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/cbdff847-d115-4c11-b964-68b089387a31)
+
+## H. Bottom 5 Pizzas by Revenue
+
+```SQL
+SELECT Top 5 pizza_name, SUM(total_price) AS Total_Revenue
+FROM pizza_sales
+GROUP BY pizza_name
+ORDER BY Total_Revenue ASC
+```
+![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/b3117fc4-3331-4661-a570-5cb13c3c0142)
+
+## I. Top 5 Pizzas by Quantity
+```SQL
+SELECT Top 5 pizza_name, SUM(quantity) AS Total_Pizza_Sold
+FROM pizza_sales
+GROUP BY pizza_name
+ORDER BY Total_Pizza_Sold DESC;
+```
+![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/7c752882-2cac-46b2-b14f-a9ebc7f9c6e7)
+
+## J. Bottom 5 Pizzas by Quantity
+```SQL
+SELECT TOP 5 pizza_name, SUM(quantity) AS Total_Pizza_Sold
+FROM pizza_sales
+GROUP BY pizza_name
+ORDER BY Total_Pizza_Sold ASC;
+```
+![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/6ade3001-8aa0-434e-9c26-5b57df57bd63)
+
+## K. Top 5 Pizzas by Total Orders
+```SQL
+SELECT Top 5 pizza_name, COUNT(DISTINCT order_id) AS Total_Orders
+FROM pizza_sales
+GROUP BY pizza_name
+ORDER BY Total_Orders DESC;
+```
+![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/f0edd654-1e09-4560-80b6-08759e0d60bb)
+
+## L. Bottom 5 Pizzas by Total Orders
+```SQL
+SELECT Top 5 pizza_name, COUNT(DISTINCT order_id) AS Total_Orders
+FROM pizza_sales
+GROUP BY pizza_name
+ORDER BY Total_Orders ASC;
+```
+![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/c96c898d-bad6-41af-9f42-9610626298b6)
+
+
+
+
 
 
 
