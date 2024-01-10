@@ -55,7 +55,7 @@ Analyze the key indications for our pizza sales data to gain insights into our b
    Create a bar chart highlighting the top 5 best selling pizza based on the revenue. Total Quantity, Total Orders. This chart will help us identify the most popular pizza options.
 7.  Bottom 5 Worst Sellers by Revenue, Total Quality and Total Orders:
 
-   Create a bar chart showcasing the bottom 5 worst selling pizza based on the revenue. Total Quantity, Total Orders. This chart will help us identify the most popular pizza options.
+    Create a bar chart showcasing the bottom 5 worst selling pizza based on the revenue. Total Quantity, Total Orders. This chart will help us identify the most popular pizza options.
 
 
    
