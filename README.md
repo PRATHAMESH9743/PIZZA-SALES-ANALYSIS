@@ -94,7 +94,7 @@ Because the data is in 48621, then the id will be in thousands of numbers (the i
 
       
 ``` SQL
-USE Pizza_sales;
+ use Pizza_sales;
 ```
 ``` SQL
 select * from Pizza_sales;
