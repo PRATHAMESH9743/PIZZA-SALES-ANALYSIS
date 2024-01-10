@@ -60,7 +60,7 @@ Analyze the key indications for our pizza sales data to gain insights into our b
 ## Open Microsoft SQL Server Management Studio
 ![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/eace9bfc-add8-4153-9c49-fa95cc7a024b)
 
-```create database Pizza_sales```
+CREATE DATABASE Music_store;
    
 
 
