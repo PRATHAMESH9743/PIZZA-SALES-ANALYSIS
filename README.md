@@ -86,23 +86,33 @@ CREATE DATABASE Pizza_sales;
 
 
 ![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/cd07ebd4-e74c-440d-a45e-797874023801)
-- - Verify that the import worked:
 
 ## Change the pizza_id from small integer(smallint) to integer(int) and order_id from tiny integer(tinyint) to integer(int), 
 Because the data is in 48621, then the id will be in thousands of numbers (the id will be of more integers), so it should not be in the small integers(smallint) so change it to integers(int), same should be done in case of the order id - change it to integers(int).
 ![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/16ceeaa9-dbc6-4168-b9b7-29397143988b)
 
-      
+- - Verify that the import worked:
+  -    
 ``` SQL
  use Pizza_sales;
 ```
 ``` SQL
 select * from Pizza_sales;
 ```
+## PIZZA SALES SQL QUERIES
+A. KPI’s
+1. Total Revenue:
+``` SQL
+SELECT SUM(total_price) AS Total_Revenue FROM pizza_sales;
+```
+![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/178c7a77-d096-475d-9c74-c282a23b7637)
 
+2. Average Order Value
+```SQL
+SELECT (SUM(total_price) / COUNT(DISTINCT order_id)) AS Avg_order_Value FROM pizza_sales;
+```
+![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/22ba3003-edb6-4c2e-8df5-8a87f37902bc)
 
-### 3) DATA CLEANING
-The termdate was imported as nvarchar(50). This column contains termination dates, hence it needs to be converted to the date format.
    
 
 
