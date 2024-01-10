@@ -4,7 +4,7 @@ This project delves deep into the realm of data analysis, utilizing SQL and Powe
 
 Source Data:
 pizza sales.csv
-The source data contained Pizza sales 48621 records of 2015. This is included in the repository.
+The source data contained Pizza sales 48621 records of year 2015. This is included in the repository.
 
 ## Database and Tools
 1. MySQL
@@ -43,6 +43,21 @@ Analyze the key indications for our pizza sales data to gain insights into our b
 
    Create a pie chart that shows the distribution os sales across different pizza categories. this chart will provide insights into the popularity of various pizza categories and their 
    contributions to overall sales      
+4. Percentage of Sales by pizza size:
+
+   Generate a pie chart that represents the percentage of sales attributed to different pizza sizes. this chart will help us undertsand customer preferences for pizza sizes and their impact 
+   on sales.
+5. Total Pizzas Sold by Pizza Category:
+
+   Create a funnel chart that presents the total number of pizza sold for each pizza category. This chart will allow us to compare the sales performance of different pizza categories.
+6. Top 5 Best Sellers by Revenue, Total Quality and Total Orders:
+
+   Create a bar chart highlighting the top 5 best selling pizza based on the revenue. Total Quantity, Total Orders. This chart will help us identify the most popular pizza options.
+7.  Bottom 5 Worst Sellers by Revenue, Total Quality and Total Orders:
+
+   Create a bar chart showcasing the bottom 5 worst selling pizza based on the revenue. Total Quantity, Total Orders. This chart will help us identify the most popular pizza options.
+
+
    
 
 
