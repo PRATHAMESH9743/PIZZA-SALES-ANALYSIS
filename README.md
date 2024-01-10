@@ -57,9 +57,10 @@ Analyze the key indications for our pizza sales data to gain insights into our b
 
     Create a bar chart showcasing the bottom 5 worst selling pizza based on the revenue. Total Quantity, Total Orders. This chart will help us identify the most popular pizza options.
 
-## open Microsoft SQL Server Management Studio
+## Open Microsoft SQL Server Management Studio
 ![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/eace9bfc-add8-4153-9c49-fa95cc7a024b)
 
+```create database Pizza_sales```
    
 
 
