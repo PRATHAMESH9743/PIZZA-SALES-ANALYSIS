@@ -11,6 +11,7 @@ The source data contained Pizza sales 48621 records of year 2015. This is includ
 2. POWER BI
 
 ## PROBLEM STATEMENT
+### A. KPI’s
 Analyze the key indications for our pizza sales data to gain insights into our business performance. specifically, to calculate the following metrices:
 
 1. Total Revenue:
@@ -91,8 +92,8 @@ CREATE DATABASE Pizza_sales;
 Because the data is in 48621, then the id will be in thousands of numbers (the id will be of more integers), so it should not be in the small integers(smallint) so change it to integers(int), same should be done in case of the order id - change it to integers(int).
 ![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/16ceeaa9-dbc6-4168-b9b7-29397143988b)
 
-- - Verify that the import worked:
-  -    
+-  Verify that the import worked:
+  
 ``` SQL
  use Pizza_sales;
 ```
@@ -100,7 +101,7 @@ Because the data is in 48621, then the id will be in thousands of numbers (the i
 select * from Pizza_sales;
 ```
 ## PIZZA SALES SQL QUERIES
-## A. KPI’s
+A. KPI’s
 ## 1. Total Revenue:
 ``` SQL
 SELECT SUM(total_price) AS Total_Revenue FROM pizza_sales;
@@ -151,7 +152,7 @@ select DATENAME(MONTH, order_date) as Month_Name, COUNT(DISTINCT order_id) as To
 from pizza_sales
 GROUP BY DATENAME(MONTH, order_date);
 ```
-![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/bd3fb522-a08a-4ff7-8092-e9a5ddc65336)
+![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/e286e688-ca46-4980-8fc3-e14fee86fa08)
 
 ## D. % of Sales by Pizza Category
 ```SQL
