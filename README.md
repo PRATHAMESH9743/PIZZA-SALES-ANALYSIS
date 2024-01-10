@@ -100,20 +100,108 @@ Because the data is in 48621, then the id will be in thousands of numbers (the i
 select * from Pizza_sales;
 ```
 ## PIZZA SALES SQL QUERIES
-A. KPI’s
-1. Total Revenue:
+## A. KPI’s
+## 1. Total Revenue:
 ``` SQL
 SELECT SUM(total_price) AS Total_Revenue FROM pizza_sales;
 ```
 ![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/178c7a77-d096-475d-9c74-c282a23b7637)
 
-2. Average Order Value
+## 2. Average Order Value
+
 ```SQL
 SELECT (SUM(total_price) / COUNT(DISTINCT order_id)) AS Avg_order_Value FROM pizza_sales;
 ```
 ![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/22ba3003-edb6-4c2e-8df5-8a87f37902bc)
 
-   
+## 3. Total Pizzas Sold
+
+```SQL
+SELECT SUM(quantity) AS Total_pizza_sold FROM pizza_sales;
+```
+![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/71929715-202a-4b21-8569-42673d8ab47f)
+
+## 4. Total Orders
+
+ ```SQL
+SELECT COUNT(DISTINCT order_id) AS Total_Orders FROM pizza_sales;
+```
+![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/baa89765-ad76-4669-bb1e-69fe06080f15)
+  
+## 5. Average Pizzas Per Order
+ ```SQL
+SELECT CAST(CAST(SUM(quantity) AS DECIMAL(10,2)) / 
+CAST(COUNT(DISTINCT order_id) AS DECIMAL(10,2)) AS DECIMAL(10,2))
+AS Avg_Pizzas_per_order
+FROM pizza_sales;
+```
+![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/4e20ec8f-600b-4f40-b501-dbd59753f30b)
+
+## B. Daily Trend for Total Orders
+ ```SQL
+SELECT DATENAME(DW, order_date) AS order_day, COUNT(DISTINCT order_id) AS total_orders 
+FROM pizza_sales
+GROUP BY DATENAME(DW, order_date);
+```
+![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/26b7e461-2433-4a1d-a7fa-d511410d320f)
+
+## C. Monthly Trend for Orders
+```SQL
+select DATENAME(MONTH, order_date) as Month_Name, COUNT(DISTINCT order_id) as Total_Orders
+from pizza_sales
+GROUP BY DATENAME(MONTH, order_date);
+```
+![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/bd3fb522-a08a-4ff7-8092-e9a5ddc65336)
+
+## D. % of Sales by Pizza Category
+```SQL
+SELECT pizza_category, CAST(SUM(total_price) AS DECIMAL(10,2)) as total_revenue,
+CAST(SUM(total_price) * 100 / (SELECT SUM(total_price) from pizza_sales) AS DECIMAL(10,2)) AS PCT
+FROM pizza_sales
+GROUP BY pizza_category;
+```
+![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/686eb282-ce75-4644-b57d-521b066af1ba)
+
+## E. % of Sales by Pizza Size
+```SQL
+SELECT pizza_size, CAST(SUM(total_price) AS DECIMAL(10,2)) as total_revenue,
+CAST(SUM(total_price) * 100 / (SELECT SUM(total_price) from pizza_sales) AS DECIMAL(10,2)) AS PCT
+FROM pizza_sales
+GROUP BY pizza_size
+ORDER BY pizza_size;
+```
+![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/8248d570-433e-4861-be5e-ed41a98d1492)
+
+
+## F. Total Pizzas Sold by Pizza Category
+```SQL
+SELECT pizza_category, SUM(quantity) as Total_Quantity_Sold
+FROM pizza_sales
+WHERE MONTH(order_date) = 2
+GROUP BY pizza_category
+ORDER BY Total_Quantity_Sold DESC;
+```
+![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/91371af4-620b-449a-97ab-460b328c5b2e)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
