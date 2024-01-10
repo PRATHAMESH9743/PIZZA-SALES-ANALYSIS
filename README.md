@@ -10,7 +10,7 @@ The source data contained Pizza sales 48621 records of 2015. This is included in
 1. MySQL
 2. POWER BI
 
-##PROBLEM STATEMENT
+## PROBLEM STATEMENT
 Analyze the key indications for our pizza sales data to gain insights into our business performance. specifically, to calculate the following metrices:
 
 1. Total Revenue:
