@@ -77,7 +77,7 @@ CREATE DATABASE Pizza_sales;
 
 ![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/2eabe31f-71e5-4ecc-9fdb-5034aa2174ef)
 
-## 3. we should modify the column
+## 3) DATA CLEANING (we should modify the column)
 ## 1. change nvarchar(50) to varchar(50)
    
 ![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/5a58ca6b-a55f-4d53-b474-39b7eb342ff3)
@@ -92,13 +92,12 @@ CREATE DATABASE Pizza_sales;
 Because the data is in 48621, then the id will be in thousands of numbers (the id will be of more integers), so it should not be in the small integers(smallint) so change it to integers(int), same should be done in case of the order id - change it to integers(int).
 ![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/16ceeaa9-dbc6-4168-b9b7-29397143988b)
 
-
-  - ``` SQL
-use hr;
+      
+``` SQL
+USE Pizza_sales;
 ```
 ``` SQL
-SELECT *
-FROM hr_data;
+select * from Pizza_sales;
 ```
 
 
