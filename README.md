@@ -14,14 +14,19 @@ The source data contained Pizza sales 48621 records of 2015. This is included in
 Analyze the key indications for our pizza sales data to gain insights into our business performance. specifically, to calculate the following metrices:
 
 1. Total Revenue:
+   
    The sum of the total price of all pizza orders.
 2. Average Order Value:
+   
    The average amount spent per order, calculate by dividing the total revenue by the total numbers of orders.
 3. Total Pizzas Sold:
+   
    The sum of the quantities of all pizzas sold.
 4. Total orders:
+   
    The total numbers of orders placed.
 5. Average Pizzas Per Order:
+   
    The average number of pizzas sold per order, calculated by dividing the total number of pizzas sold  by the total numbers of orders.
 
  ## CHARTS REQIREMENTS
