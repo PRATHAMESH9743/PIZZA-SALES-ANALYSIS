@@ -241,7 +241,43 @@ ORDER BY Total_Orders ASC;
 
 ## DATA VISUALIZATION - POWER BI
 ### Connect POWER BI to SQL Database
+![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/b2a792d1-cbf0-4f0f-8dd9-987e2a3eb1b1)
 
+Load the data into the POWER BI
+![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/2af8f3a6-11f8-4281-baa5-700da6c6d16e)
+
+### Data cleaning
+Now make use of Power Query
+step1. Go to Transform Data tab > Now select the entire column of pizza_size
+step2. Now Replace the M with Medium, and change L to Large and S to Regular and XLarge to X-Large 
+![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/469308ae-a9e1-48d3-a0e4-595e385373e2)
+
+## BUILDING THE KPI'S
+![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/c8e13a3e-75b8-4ad3-84e7-87f996d65da9)
+
+## Data Processing in Power Bi 
+ To Get the Daily trend and Monthly Trend For Total Orders, we will use order Date column and we will extract the Day and Month from the Order Date column.
+
+![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/15523e7b-e65f-44eb-b741-fe6294901372)
+
+## Building Daily and Monthly Trend Charts
+![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/e8b4c218-edbd-4066-9e49-e2ca930bef23)
+
+## Building % of Sales by Category & Size 
+![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/37b5a1cf-ffb4-420d-82f7-d2596f6cf69e)
+
+## Adding Insights 
+![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/ffd2ed77-33d9-42b9-a13e-3ef83b6e6502)
+
+## Worst and Best Sellers Dashboard
+![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/779acafc-0ace-49a4-9e49-bd490ec1c9a4)
+
+## Adding Insights 
+![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/18dd3dde-cd2a-4090-bc5d-7232144038f0)
+
+## COMPLETE DASHBOARD
+![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/49adc7c0-ea0b-41e2-ae38-63299e129232)
+![image](https://github.com/PRATHAMESH9743/PIZZA-SALES-ANALYSIS/assets/154798147/9e47ae2f-4d27-4957-afaf-7a1b17e8c4d3)
 
 
 
